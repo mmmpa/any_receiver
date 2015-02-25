@@ -33,6 +33,5 @@ class ApplicationController < ActionController::Base
   def passed_params
     params.delete(:controller)
     params.merge!(method: params.delete(:action))
-    params
   end
 end
